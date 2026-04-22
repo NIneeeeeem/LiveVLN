@@ -15,7 +15,7 @@
 
 
 <p align="center">
-  <img src="assets/figures/livevln_teaser_git.png" alt="LiveVLN teaser illustrating multi-step execution for smoother and more efficient navigation" width="78%" />
+  <img src="assets/figures/livevln_gif.gif" alt="LiveVLN teaser illustrating multi-step execution for smoother and more efficient navigation" width="90%" />
 </p>
 
 LiveVLN is a runtime wrapper for compatible pretrained VLM based navigators. Instead of exposing the robot to a blocking **sense-inference-execution** loop, it overlaps execution with background refresh so the next action chunk is ready before the committed prefix is exhausted.
@@ -32,7 +32,7 @@ Previous strong VLN systems still deploy with a blocking **sense â†’ inference â
 - **Training-free integration**: wrap the same pretrained checkpoint without retraining the backbone.
 
 <p align="center">
-  <img src="assets/figures/livevln_overview.png" alt="LiveVLN overview with executed actions, guard buffer, revisable tail, and dual-thread handoff" width="100%" />
+  <img src="assets/figures/livevln_overview.png" alt="LiveVLN overview with executed actions, guard buffer, revisable tail, and dual-thread handoff" width="90%" />
 </p>
 
 <p align="center"><em>LiveVLN keeps a short committed prefix for continuous motion, while the remaining tail stays revisable under new observations.</em></p>
