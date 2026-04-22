@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python3 agent_service_live.py
